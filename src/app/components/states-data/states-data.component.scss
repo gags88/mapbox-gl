@@ -1,0 +1,18 @@
+:host {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.mat-card {
+  padding: 0;
+  .mat-list {
+    padding: 0;
+    cursor: pointer;
+    .mat-list-item {
+      &:hover,
+      &.active {
+        background-color: #eeeeee;
+      }
+    }
+  }
+}

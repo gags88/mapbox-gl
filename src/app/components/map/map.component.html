@@ -1,0 +1,11 @@
+<div fxLayout="row" fxLayout.xs="column">
+  <app-states-data
+    fxFlex.gt-xs="250px"
+    fxFlex="150px"
+    [states]="stateData"
+    (menuItemClicked)="zoomMapToSelectedCoordinates($event)"
+    *ngIf="stateData.length"
+  ></app-states-data>
+  <div id="map" class="map-container"></div>
+  <h1 *ngIf="notSupprotedMessage">{{ notSupprotedMessage }}</h1>
+</div>
